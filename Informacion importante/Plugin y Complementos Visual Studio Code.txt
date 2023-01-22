@@ -1,0 +1,37 @@
+
+
+				Plugins y complementos Html para visual studio code 
+		
+		1. HTML Snippets
+		2. HTML CSS Support
+		3. HTML Boilerplate
+		4. Bracket Pair Colorizer
+		5. Material Icon Theme
+		6. Prettier - Code formatter
+		7. Visual Studio IntelliCode
+
+
+		Fazt
+
+		1. Dobri Next 			-> Temas para Visual studio code 
+		2. Material Icon Theme 		-> Iconos a las Carpetas 
+		3. Peacock			-> Color a las Ventanas de Visual studio code
+		4. Prettier - Code formatter	-> Orden a la estructura 
+		5. vim				-> Editor de codigo
+		6. Live Server			-> Servidor en Vivo
+		7. CSS Formatter		-> Orden Css
+		8. Debugger for Chrome		-> 
+		9. DotENV			-> 
+		
+
+
+
+
+		
+
+
+
+
+
+
+	

@@ -1,0 +1,269 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* // height and widths when not using flex */
+
+.my-full-height {
+  height: 100%;
+}
+.my-full-height-vp {
+  height: 100vh;
+}
+.my-half-height {
+  height: 50%;
+}
+.my-full-width {
+  width: 100%;
+}
+
+/* // flex layouts */
+
+.my-flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.my-row-reverse {
+  flex-direction: row-reverse;
+}
+.my-flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* // columns grid */
+
+.my-col-2 {
+  flex: 0 0 16.666666666666667%;
+  max-width: 16.666666666666667%;
+  box-sizing: border-box;
+}
+.my-col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+}
+.my-col-4 {
+  flex: 0 0 33.333333333333333%;
+  max-width: 33.333333333333333%;
+  box-sizing: border-box;
+}
+.my-col-5 {
+  flex: 0 0 41.666666666666667%;
+  max-width: 41.666666666666667%;
+  box-sizing: border-box;
+}
+.my-col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+.my-col-7 {
+  flex: 0 0 58.333333333333333%;
+  max-width: 58.333333333333333%;
+}
+.my-col-8 {
+  flex: 0 0 66.666666666666667%;
+  max-width: 66.666666666666667%;
+  box-sizing: border-box;
+}
+.my-col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+  box-sizing: border-box;
+}
+.my-col-10 {
+  flex: 0 0 83.333333333333333%;
+  max-width: 83.333333333333333%;
+  box-sizing: border-box;
+}
+.my-col-11 {
+  flex: 0 0 91.666666666666667%;
+  max-width: 91.666666666666667%;
+  box-sizing: border-box;
+}
+.my-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* //paddings */
+
+.my-pa-small {
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.my-pb-small {
+  padding-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+.my-pt-small {
+  padding-top: 0.5rem;
+  box-sizing: border-box;
+}
+.my-pr-small {
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+}
+.my-pl-small {
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+}
+.my-pr-1 {
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+.my-pl-1 {
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+.my-pt-1 {
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+.my-pb-1 {
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+}
+.my-pa-1 {
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* //margins */
+
+.my-mb-small {
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+.my-mt-small {
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+}
+.my-mr-small {
+  margin-right: 0.5rem;
+  box-sizing: border-box;
+}
+.my-ml-small {
+  margin-left: 0.5rem;
+  box-sizing: border-box;
+}
+.my-ma-small {
+  margin: 0.5rem;
+  box-sizing: border-box;
+}
+.my-mr-1 {
+  margin-right: 1rem;
+  box-sizing: border-box;
+}
+.my-ml-1 {
+  margin-left: 1rem;
+  box-sizing: border-box;
+}
+.my-mt-1 {
+  margin-top: 1rem;
+  box-sizing: border-box;
+}
+.my-mb-1 {
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+/* //align-self */
+
+.as-auto {
+  align-self: auto;
+}
+.as-start {
+  align-self: flex-start;
+}
+.as-end {
+  align-self: flex-end;
+}
+.as-center {
+  align-self: center;
+}
+.as-baseline {
+  align-self: baseline;
+}
+.as-stretch {
+  align-self: stretch;
+}
+
+/* // justify-content */
+
+.my-jc-start {
+  justify-content: flex-start;
+}
+.my-jc-end {
+  justify-content: flex-end;
+}
+.my-jc-center {
+  justify-content: center;
+}
+.my-jc-between {
+  justify-content: space-between;
+}
+.my-jc-around {
+  justify-content: space-around;
+}
+
+/* // align-items */
+
+.my-ai-start {
+  align-items: flex-start;
+}
+.my-ai-end {
+  align-items: flex-end;
+}
+.my-ai-center {
+  align-items: center;
+}
+.my-ai-baseline {
+  align-items: baseline;
+}
+.my-ai-stretch {
+  align-items: stretch;
+}
+
+/* // text-align */
+
+.my-ta-left {
+  text-align: left;
+}
+.my-ta-right {
+  text-align: right;
+}
+.my-ta-center {
+  text-align: center;
+}
+
+.search-wrapper {
+  border-top: 1px solid #e9ecef;
+}
+
+.search-box label {
+  font-weight: bold;
+  padding: 0.75rem;
+  margin-bottom: 0;
+  color: #5b5757;
+}
+
+.search-row {
+  display: flex;
+  border-top: 2px solid #e9ecef;
+  padding-top: 15px;
+}
+
+.search-row input {
+  margin-right: 10px;
+}

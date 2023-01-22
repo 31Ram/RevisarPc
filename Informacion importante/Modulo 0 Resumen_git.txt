@@ -1,0 +1,45 @@
+Comandos esenciales de terminal: 
+
+- cd  <nombre_de_la_carpeta> - Para entrar en una carpeta
+- cd .. - Para salir de una carpeta
+- ls  -lah -> lista los ficheros de una carpeta
+- mkdir <nombre_de_la_carpeta> - Crea una carpeta nueva
+- rmdir <nombre_de_la_carpeta>  - para borrar carpeta vacía
+- rm <nome_de_fichero>: para borrar fichero
+- rm -r : para borrar carpeta y todos los ficheros dentro
+- cp   <fichero_original>   <nombre_fichero_destino>  (cp no copia carpetas)
+- cp   -rf <carpeta_original>   <nueva_carpeta_destino>  (copia ficheros y carpetas)
+- mv   <nombre_de_la_carpeta>/<nombre_de_lo_fichero>   <fichero_nuevo>/<carpeta_nueva>
+- touch <nombre_de_fichero> - Crea un fichero vacío
+
+Comandos esenciales de Git para que puedan seguir tranquilos con el curso.
+
+- Iniciar repositorio localmente que no existe en lugar ninguno desde tu ordenador, ni existe en github
+	- git init
+- Iniciar repositorio que no existe en lugar ninguno desde Github
+- Clonar repositorio que ya existe
+	- git clone <url_de_tu_repositorio>
+- Añadir cambios 
+	- git add . 
+	- git add <nombre_de_fichero_1>  <nombre_de_fichero_2>  <nombre_de_fichero_2> - Otra manera de añadir, fichero por fichero, uno a uno
+- Commit
+	- git commit -m “Texto explicando los cambios” 
+- Verifica cualquier cambio en Github y traelos para tu computador
+	- git pull 
+- Lista los repositorios remotos Github
+	- git remote -v
+- Añadir un enlace de github a tu repositorio
+	- git remote add origin <enlace_de_repositorio_github>
+- Push
+	- git push - Enviando los cambios para Github
+	- git push -u origin <nombre_de_rama> - Envia los cambios de la rama atual y la crea en Github
+- Creando una rama desde la rama atual
+	- git checkout -b <nombre_de_la_rama>  - Crea una rama nueva desde la rama atual y entra en la rama creada
+	- git branch <nombre_de_la_rama> - Otra manera de crear una rama, pero sin cambiar la rama atual para la creada
+- Cambiando de ramas
+	- git checkout <nombre_de_la_rama> - Cambia la rama atual para la pasada como variable
+- Haciendo pull requests
+	- Vamos a Github 
+
+Un tutorial bueno de github
+- https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/

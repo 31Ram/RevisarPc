@@ -1,0 +1,19 @@
+-- Buscar los hoteles en los que tiene reserva John Smith
+--- Paso 1: Busco su id
+select id from customers where name = 'John Smith';
+
+--- Paso 2: Una vez tengo su id, busco en bookings
+select * from bookings where customer_id = 1;
+
+--- Paso 3: De la lista de bookings, me quedo con los hotel_id y busco en hotels
+select * from hotels where id = 1 or id = 3;
+
+
+-- customers --> Buscar el id de John Smith
+-- bookings ---> Reservas de cada customer
+-- hotels --> Listar los nombres
+select bookings.checkin_date, hotels.name, hotels.rooms 
+from customers 
+join bookings on customers.id = bookings.customer_id
+join hotels on hotels.id = bookings.hotel_id
+where customers.name = 'John Smith';

@@ -1,0 +1,17 @@
+create table band (
+  id       SERIAL PRIMARY KEY,
+  name     VARCHAR(30) NOT null,
+  active boolean default true
+);
+
+
+CREATE TABLE disco (
+  id       SERIAL PRIMARY KEY,
+  name     VARCHAR(30) NOT null,
+  edition_date    date,
+  genre varchar(40),
+  band_id int references band(id)
+);
+
+insert into band(name, active) values('Pink Floyd', false);
+insert into disco(name, edition_date, genre, band_id) values('The Wall', '1979-01-01', 'Rock', 1);

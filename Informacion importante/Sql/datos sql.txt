@@ -1,0 +1,27 @@
+select name, city from customers 
+where (city = 'Madrid' or city='London') or country = 'UK';
+
+update customers set name = 'Sue Smith' where name = 'Sue Jones';
+
+update customers set name = 'Sue Smith' where id = 2;
+
+update customers set name = 'Sue Smith' where email = 's.jones1234@gmail.com';
+
+delete from customers where id = 3;
+
+-- Buscar los hoteles en los que tiene reserva John Smith
+--- Paso 1: Busco su id
+select id from customers where name = 'John Smith';
+
+--- Paso 2: Una vez tengo su id, busco en bookings
+select * from bookings where customer_id = 1;
+
+--- Paso 3: De la lista de bookings, me quedo con los hotel_id y busco en hotels
+select * from hotels where id = 1 or id = 3;
+
+insert into bookings(customer_id) 
+
+alter table customers 
+add column active boolean default true;
+
+update customers set active = false, country = 'France' where name = 'John Smith';

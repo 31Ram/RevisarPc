@@ -1,0 +1,25 @@
+
+			
+			Editor de Codigo - Visual Studio code
+				Complementos - Plugins
+
+00 - JavaScript (ES6) code snippets			-> Proporciona fragmentos de código JavaScript, TypeScript, Vue, React y HTML.
+01 - CSS Peek					     	->
+02 - Auto Close Tag				     	-> Etiquetado automatico.
+03 - ESLint					     	-> 
+04 - Prettier 		 	                     	-> Formatea y Alinea Automaticamente.
+05 - Path Intellisense				     	->
+06 - GitLens 					     	->
+07 - Project Manager				     	->
+08 - Live Server					->
+09 - Better Comments				     	->
+
+11 - Code Time					     	->
+12 - Settings Sync				     	->
+13 - Bracket Pair Colorizer                            	-> Permite personalizar con colores el editor de texto.
+14 - ES7 React/Redux/GraphQL/React-Native snippets     	-> Atajos de teclado y Autocompletar.
+15 - Html Snippets 				     	-> Ayuda a autocompletar el codigo Html.
+16 - IntelliSense for CSS class names in HTML          	-> Ayuda a autocompletar el codigo Css.
+17 - Material Icon Theme                               	-> Genera iconos. 
+18 - React Native Snippet				-> Ayuda a autocompletar el codigo React native
+19 - Terminal 					     	-> Consolo de linea de comando de editor.

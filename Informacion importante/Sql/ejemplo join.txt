@@ -1,0 +1,46 @@
+create table band (
+  id       SERIAL PRIMARY KEY,
+  name     VARCHAR(30) NOT null,
+  active boolean default true
+);
+​
+​
+CREATE TABLE disco (
+  id       SERIAL PRIMARY KEY,
+  name     VARCHAR(30) NOT null,
+  edition_date    date,
+  genre varchar(40),
+  band_id int references band(id)
+);
+​
+insert into band(name, active) values('Pink Floyd', false);
+insert into disco(name, edition_date, genre, band_id) values('The Wall', '1979-01-01', 'Rock', 1);
+insert into disco(name, edition_date, genre, band_id) values('The Dark Side of the moon', '1973-01-01', 'Rock', 1);
+​
+insert into band(name, active) values('lupus', true);
+insert into disco(name, edition_date, genre, band_id) values('Crematorio', '2022-01-01', 'Hardcore Punk', 2);
+​
+insert into band(name, active) values('Metallica', false);
+​
+insert into band(name, active) values('One Direction', false);
+insert into disco(name, edition_date, genre, band_id) values('Up All Nigth', '2011-11-18', 'Pop', 4);
+​
+insert into disco(name, edition_date, genre, band_id) values('And justice for All', '1988-05-01', 'Rock', 3);
+​
+​
+insert into band(name, active) values ('Caramelos de Cianuro', false);
+insert into disco(name, edition_date, genre, band_id) values('Cuentos Para Adultos', '1993-11-18', 'Rock', 5);
+​
+select * from band where id = 4;
+select * from disco;
+​
+-- Sin Join: Dos pasos Metallica - id = 3
+select id from band where name = 'Metallica';
+select * from disco where band_id = 3;
+​
+​
+-- JOIN - combinar dos o mas tablas -> Una nueva Tabla
+select disco.name, disco.edition_date 
+from band join disco on disco.band_id = band.id
+where band.name = 'lupus' or band.name = 'Caramelos de Cianuro'; 
+​
